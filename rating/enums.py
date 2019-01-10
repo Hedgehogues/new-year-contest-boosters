@@ -6,3 +6,9 @@ class Languages(Enum):
     RU = 1
     EN = 2
     BOTH = 3
+
+
+class Level(Enum):
+    CITY = 0
+    HOUSE = 1
+    NULL = 2

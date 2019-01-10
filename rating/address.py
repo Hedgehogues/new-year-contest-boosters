@@ -1,5 +1,4 @@
-from rating import utils
-from rating.enums import Languages
+from rating.enums import Languages, Level
 from rating.utils import extract_struct_resp_addr_, extract_full_resp_addr_, extract_query_, extract_point_
 
 
@@ -29,6 +28,7 @@ class Address:
         self.point_ru = extract_point_(j_ru)
 
         self.best_lang = Languages.NULL
+        self.level = Level.NULL
 
     def get_best_coords(self):
-        return utils.str_to_point(self.point_en) if self.best_lang == Languages.EN else utils.str_to_point(self.point_ru)
+        return self.point_en if self.best_lang == Languages.EN else self.point_ru
