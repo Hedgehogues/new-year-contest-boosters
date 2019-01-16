@@ -25,11 +25,16 @@ Happy Data Year - новогодний чемпионат по анализу д
 Геокодирование производилось двумя способами, которые матчатся друг с другом. Будем различать геокодирование 2х видов: на английском и на русском. 
 
 Этап 1. Два вида геокодинга будем матчить. При транслитерации на русский будем заменять токены и даже слова. 
+
 Этап 2. Валидация по стране, городу, улице и дому. И отдельно по дому. Если удалось произвести матчинг для русского и английского варианта геокодирования, то добавляем к ответу данный адресс.
+
 Этап 3. С помощью libpostal восстанавливаем структуру тех адресов, которые не удалось распарсить на предыдущем шаге (дом, страна, улица и т.д.). Распологаем их в хронологическом порядке: страна, область, город, улица, дом.
+
 Этап 4. Повторно отправляем запросы к геокодеру для адресов предыдущего шага.
-Этап 5. Валидация по стране, городу, улице и дому. И отдельно по дому. Если удалось произвести матчинг для русского и английского варианта геокодирования, то добавляем к ответу данный адресс. (Повтор этапа 2)
-Этап 6. Отбираем те адреса, у которых распознаны города хотя бы в одном случае и распознана страна как Россия
+
+Этап 5. Валидация по стране, городу, улице и дому. И отдельно по дому. Если удалось произвести матчинг для русского и английского варианта геокодирования, то добавляем к ответу данный адресс. (Повтор этапа 2).
+
+Этап 6. Отбираем те адреса, у которых распознаны города хотя бы в одном случае и распознана страна как Россия.
 
 Детальнее можно посмотреть ноутбук [get_bad_addresses.ipynb](https://github.com/Hedgehogues/new_year_contest_boosters/blob/master/get_bad_addresses.ipynb), а также, реализацию парсеров [rating/](https://github.com/Hedgehogues/new_year_contest_boosters/tree/master/rating).
 
@@ -81,11 +86,16 @@ The training sample contains data on the geo-location of six thousand ATMs of Ro
 Geocoding was done in two ways, which are matched with each other. We will distinguish 2 types of geocoding: in English and in Russian.
 
 Step 1. Two types of geocoding will match. When transliterating into Russian, we will replace tokens and even words.
+
 Step 2. Validation of the country, city, street and house. And separately at home. If it was possible to make a match for the Russian and English versions of geocoding, then we add this address to the answer.
+
 Step 3. Using libpostal, we restore the structure of those addresses that we could not parse in the previous step (house, country, street, etc.). We arrange them in chronological order: country, region, city, street, house.
+
 Step 4. Resend requests to the geocoder for the addresses of the previous step.
-Step 5. Validation of the country, city, street and house. And separately at home. If it was possible to make a match for the Russian and English versions of geocoding, then we add this address to the answer. (Repeat Stage 2)
-Step 6. We select those addresses in which cities were recognized at least in one case and the country is recognized as Russia
+
+Step 5. Validation of the country, city, street and house. And separately at home. If it was possible to make a match for the Russian and English versions of geocoding, then we add this address to the answer. (Repeat Stage 2).
+
+Step 6. We select those addresses in which cities were recognized at least in one case and the country is recognized as Russia.
 
 You can see the laptop [get_bad_addresses.ipynb](https://github.com/Hedgehogues/new_year_contest_boosters/blob/master/get_bad_addresses.ipynb) for details, as well as the implementation of parsers [rating/](https://github.com/Hedgehogues/new_year_contest_boosters/tree/master/rating).
 
