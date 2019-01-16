@@ -1,5 +1,7 @@
 # Новогодний контест Boosters от Росбанка
 
+![Results](results.png)
+
 Happy Data Year - новогодний чемпионат по анализу данных от Росбанка.
 
 В обучающей выборке находятся данные о геопозиции шести тысяч банкоматов Росбанка и его партнеров, а также целевая переменная — индекс популярности банкомата. В тестовой выборке еще две с половиной тысячи банкоматов, разделенных поровну на публичную и приватную часть.
@@ -53,6 +55,8 @@ Happy Data Year - новогодний чемпионат по анализу д
 Внимание! Требуется установка пакета [libpostal](https://github.com/openvenues/libpostal) (ставится из исходников) и [транслитератора](https://github.com/barseghyanartur/transliterate), помимо стандартных вещей sklearn, numpy, xgboost, lightgbm и т.п.
 
 # New Year Contest Boosters from Rosbank
+
+![Results](results.png)
 
 Happy Data Year - New Year's data analysis championship from Rosbank.
 
