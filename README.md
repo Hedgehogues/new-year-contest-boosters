@@ -1,6 +1,6 @@
 # Новогодний контест Boosters от Росбанка
 
-![Results](results.png)
+![Results](results1.png)
 
 Happy Data Year - новогодний чемпионат по анализу данных от Росбанка.
 
@@ -62,7 +62,7 @@ Happy Data Year - новогодний чемпионат по анализу д
 
 # New Year Contest Boosters from Rosbank
 
-![Results](results.png)
+![Results](results1.png)
 
 Happy Data Year - New Year's data analysis championship from Rosbank.
 
