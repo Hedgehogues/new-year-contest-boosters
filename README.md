@@ -17,8 +17,9 @@ Happy Data Year - новогодний чемпионат по анализу д
 * [best_baseline.ipynb](https://github.com/Hedgehogues/new_year_contest_boosters/blob/master/best_baseline.ipynb) -- лучшее решение
 * [get_bad_addresses.ipynb](https://github.com/Hedgehogues/new_year_contest_boosters/blob/master/get_bad_addresses.ipynb) -- получение координат с помощью геокодера яндекса (обкачка + подготовка). Сохраняет результаты работы в [missed_coords.csv](https://github.com/Hedgehogues/new_year_contest_boosters/blob/master/missed_coords.json) Реализация парсера лежит в [rating/](https://github.com/Hedgehogues/new_year_contest_boosters/tree/master/rating)
 * [get_yandex_ratings.ipynb](https://github.com/Hedgehogues/new_year_contest_boosters/blob/master/get_yandex_ratings.ipynb) -- получение рейтингов с помощью скрытого API яндекса. Реализация парсера лежит в [yandex/](https://github.com/Hedgehogues/new_year_contest_boosters/tree/master/yandex). Здесь же лежат и данные с Яндекса.
-* [1.png](https://github.com/Hedgehogues/new_year_contest_boosters/blob/master/1.png) -- важность фичей по lgbm
+* [lgbmImportance.png](https://github.com/Hedgehogues/new_year_contest_boosters/blob/master/lgbmImportance.png) -- важность фичей по lgbm
 * Happy Data Year.rar -- решение Александры Журавской
+* [analytics/](https://github.com/Hedgehogues/new_year_contest_boosters/blob/master/analytics/) -- Аналитика по результатам соревнования
 
 ## Yandex геокодер
 
@@ -80,6 +81,7 @@ The training sample contains data on the geo-location of six thousand ATMs of Ro
 * [get_yandex_ratings.ipynb](https://github.com/Hedgehogues/new_year_contest_boosters/blob/master/get_yandex_ratings.ipynb) - getting ratings using the hidden API of Yandex. The implementation of the parser is in [yandex/](https://github.com/Hedgehogues/new_year_contest_boosters/tree/master/yandex). Here are the data from Yandex.
 * [1.png](https://github.com/Hedgehogues/new_year_contest_boosters/blob/master/1.png) - the importance of features by lgbm
 * Happy Data Year.rar - the decision of Alexandra Zhuravskaya
+* [analytics/](https://github.com/Hedgehogues/new_year_contest_boosters/blob/master/analytics/) -- Analytics on the results of the competition
 
 ## Yandex geocoder
 
