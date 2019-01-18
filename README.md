@@ -1,6 +1,6 @@
 # Новогодний контест Boosters от Росбанка
 
-![Results](results1.png)
+![Results](results.png)
 
 Happy Data Year - новогодний чемпионат по анализу данных от Росбанка.
 
